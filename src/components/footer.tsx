@@ -14,15 +14,13 @@ export function Footer() {
             onPointerEnterCapture={undefined}
             onPointerLeaveCapture={undefined}
           >
-            &copy; {CURRENT_YEAR} Made with{" "}
-            <a href="https://www.material-tailwind.com" target="_blank">
-              Material Tailwind
-            </a>{" "}
+            &copy; {CURRENT_YEAR} Made
             by{" "}
             <a href="https://www.creative-tim.com" target="_blank">
               Usaid Mustafa
             </a>
             .
+            All rights reserved.
           </Typography>
           <ul className="flex gap-8 items-center">
             {LINKS.map((link) => (

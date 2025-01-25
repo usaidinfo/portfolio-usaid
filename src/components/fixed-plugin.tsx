@@ -18,7 +18,7 @@ export function FixedPlugin() {
           height={128}
           className="w-5 h-5"
           alt="Material Tailwind"
-          src="https://www.material-tailwind.com/favicon.png"
+          src="/favicon.png"
         />{" "}
         Made by Usaid Mustafa
       </Button>
