@@ -28,7 +28,7 @@ export function ProjectCard({ img, title, desc, technologies }: ProjectCardProps
           src={img}
           alt={title}
           fill
-          className="object-cover"
+          className="object-contain"
         />
       </CardHeader>
       <CardBody 

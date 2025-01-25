@@ -25,13 +25,13 @@ interface Project {
   demoLink?: string;
   githubLink?: string;
   duration?: string;
-  category: "web" | "mobile" | "fullstack" | "ai";
+  category: ("web" | "mobile" | "fullstack" | "ai")[];  // Changed to array
 }
 
 export const PROJECTS: Project[] = [
   {
     id: "leaf-ai-platform",
-    img: "/image/blog3.svg",
+    img: "/image/leaf-ai-dashboard.png",
     title: "Sensor Management Platform",
     desc: "A comprehensive IoT platform for managing and monitoring environmental sensors with real-time data visualization and AI-powered insights.",
     longDesc: "Leading the frontend development of a sophisticated sensor management platform that handles real-time data from environmental sensors. The platform features interactive dashboards, real-time monitoring, and AI-powered analytics for environmental data interpretation.",
@@ -39,65 +39,135 @@ export const PROJECTS: Project[] = [
       { name: "Next.js", color: "blue" },
       { name: "TypeScript", color: "blue" },
       { name: "Material UI", color: "purple" },
-      { name: "WebSocket", color: "green" },
-      { name: "Redux", color: "purple" }
+      { name: "Zustand", color: "purple" },
+      { name: "Recharts", color: "purple" },
     ],
-    category: "ai",
-    duration: "Feb 2024 - Present",
+    category: ["web"],
+    duration: "Dec 2024 - Present",
     images: [
-      { url: "/image/blog3.svg", alt: "LeafAI Dashboard" },
-      { url: "/image/blog2.svg", alt: "Sensor Analytics" }
+      { url: "/image/leaf-ai-dashboard.png", alt: "LeafAI Dashboard" },
+      { url: "/image/leafai-signup.png", alt: "Sign Up page" },
+      { url: "/image/leafai-mobile!.png", alt: "mobile dashboard" },
+      { url: "/image/leafai-mobile3.png", alt: "Sign up Mobile" },
+      { url: "/image/leafai-mobile2.png", alt: "Setup page" },
+      { url: "/image/leafai-mobile4.png", alt: "Setup page" },
+      { url: "/image/leafai-mobile5.png", alt: "Sensor selection page" },
+      { url: "/image/leafai-mobile6.png", alt: "Plant selection page" },
+      { url: "/image/leafai-mobile7.png", alt: "Setup page" },
     ],
   },
   {
-    id: "task-management",
-    img: "/image/blog-1.svg",
-    title: "Task Management Platform",
-    desc: "A comprehensive task management solution similar to Jira and ClickUp using React and Material UI, built with the MERN stack.",
-    longDesc: "Built a full-featured task management platform that allows teams to organize and track their projects efficiently. Includes features like drag-and-drop task organization, real-time updates, and team collaboration tools.",
+    id: "career-bridge",
+    img: "/image/careerbridge (5).png",
+    title: "CareerBridge: Connecting Talent",
+    desc: "CareerBridge is a Next.js-powered job platform offering advanced search, personalized recommendations, and application tracking.",
+    longDesc: "CareerBridge is an innovative job platform that connects job seekers with exciting opportunities. Built with Next.js and React, it offers a seamless user experience with advanced search, personalized recommendations, and application tracking. The platform integrates modern UI components, data visualization, and interactive maps. It utilizes Redux for state management and React Slick for carousels. CareerBridge empowers job seekers to discover and apply for positions while helping employers efficiently manage hiring.",
     technologies: [
-      { name: "MongoDB", color: "green" },
-      { name: "Express.js", color: "green" },
-      { name: "React", color: "blue" },
-      { name: "Node.js", color: "green" }
+      { name: "Next.js", color: "green" },
+      { name: "Bootsrap", color: "blue" },
+      { name: "Redux-toolkit", color: "green" },
+      { name: "AOS", color: "blue" },
+      { name: "Chart.js", color: "green" },
     ],
-    category: "fullstack",
-    duration: "Oct 2024 - Present",
+    category: ["web"],
+    duration: "Aug 2024 - Nov 2024",
     images: [
-      { url: "/image/blog3.svg", alt: "LeafAI Dashboard" },
-      { url: "/image/blog2.svg", alt: "Sensor Analytics" }
+      { url: "/image/careerbridge (3).png", alt: "Landing Page 1" },
+      { url: "/image/careerbridge (4).png", alt: "Lanind Page 2" },
+      { url: "/image/careerbridge (5).png", alt: "Lanind Page 3" },
+      { url: "/image/careerbridge1.png", alt: "Lanind Page mobile" },
+      { url: "/image/careerbridge1 (1).png", alt: "Lanind Page mobile" },
     ],
   },
   {
     id: "time-monitoring",
-    img: "/image/blog2.svg",
+    img: "/image/productiviti.webp",
     title: "Time Monitoring Application",
-    desc: "An enterprise time tracking solution with both web and mobile interfaces for comprehensive time management.",
-    longDesc: "Developed a time monitoring application at Infomover Technologies that helps track user activity and time allocation. The solution includes both web and mobile interfaces for maximum accessibility.",
+    desc: "Productiviti is a workforce productivity and employee monitoring platform offering real-time activity logging and analytics.",
+    longDesc: "Productiviti is a comprehensive solution designed to enhance workforce productivity through advanced monitoring and analytics. It provides real-time tracking of employee activities, delivering data-driven insights to optimize team performance. Key features include automated attendance tracking, enterprise asset management, and customizable monitoring parameters to meet diverse organizational needs. The platform offers both user-specific and business-wide analytics, allowing for a unified view of productivity metrics. With options for custom branding and flexible deployment, Productiviti caters to businesses seeking to improve efficiency and maintain compliance in today's dynamic work environments. ",
     technologies: [
-      { name: "Next.js", color: "blue" },
-      { name: "React Native", color: "blue" },
-      { name: "Java Backend", color: "red" },
-      { name: "UI Libraries", color: "purple" }
+      { name: "React.js", color: "blue" },
+      { name: "Prime React", color: "purple" },
+      { name: "Typescript", color: "purple" },
+      { name: "Chart.js", color: "purple" },
+      { name: "formik", color: "purple" },
+      { name: "Primeflex", color: "purple" },
     ],
-    category: "mobile",
-    duration: "Feb 2024 - Present",
+    category: ["web", 'fullstack'],
+    duration: "Feb 2024 - Sept 2024",
     images: [
-      { url: "/image/blog3.svg", alt: "LeafAI Dashboard" },
-      { url: "/image/blog2.svg", alt: "Sensor Analytics" }
+      { url: "/image/productiviti.webp", alt: "Dashboard" },
+      { url: "/image/productiviti1.webp", alt: "Screenshots" },
+      { url: "/image/productiviti2.webp", alt: "table" },
+      { url: "/image/productiviti3.webp", alt: "Permissions" },
+      { url: "/image/productiviti4.webp", alt: "App Usage" },
+      { url: "/image/productiviti5.jpg", alt: "Table" },
+      { url: "/image/productiviti6.jpg", alt: "Table" },
     ],
   },
-  // Add more projects as needed
+  {
+    id: "time-monitoring-mobile",
+    img: "/image/productivitimobile.jpg",
+    title: "Time Monitoring Mobile",
+    desc: "Productiviti's mobile app provides real-time employee activity analytics for productivity optimization.",
+    longDesc: "The Productiviti mobile application offers on-the-go access to comprehensive workforce productivity analytics. Users can monitor active versus idle time, track absenteeism, and review activity reports across various intervals—hourly, weekly, monthly, quarterly, and yearly. The app also provides insights into active applications used by employees, facilitating informed decisions to enhance team performance. Designed for simplicity and efficiency, the mobile app ensures that managers and team leaders can stay connected to key productivity metrics anytime, anywhere.",
+    technologies: [
+      { name: "React Native", color: "blue" },
+      { name: "Expo", color: "purple" },
+      { name: "Native Wind", color: "purple" },
+      { name: "Native Base", color: "purple" },
+      { name: "Context API", color: "purple" },
+      { name: "Jest", color: "purple" },
+    ],
+    category: ["mobile"],
+    duration : "Aug 2024 - Oct 2024",
+    images: [
+      { url: "/image/productivitimobile.jpg", alt: "mobile" },
+      { url: "/image/productivitimobile1.jpg", alt: "mobile" },
+      { url: "/image/productivitimobile6.png", alt: "mobile" },
+      { url: "/image/productivitimobile2.jpg", alt: "mobile" },
+      { url: "/image/productivitimobile4.jpg", alt: "mobile" },
+    ]
+  },
+  {
+    id: "productiviti-marketing",
+    img: "/image/productiviti-web (7).png",
+    title: "Productiviti Marketing Web",
+    desc: "The Productiviti marketing website showcases the platform’s features, benefits, and solutions, guiding businesses toward productivity optimization.",
+    longDesc: "The Productiviti marketing website serves as an engaging and informative platform designed to highlight the core offerings of the Productiviti solution. It provides a visually appealing and user-friendly interface to communicate the platform's benefits, such as real-time workforce monitoring, analytics, and productivity optimization. \n \n This website aims to attract potential customers by showcasing key features through interactive visuals, testimonials, and case studies. It also simplifies navigation for businesses seeking information about the platform, pricing, and support. With clear calls-to-action and well-structured content, the marketing site effectively bridges the gap between the product and its target audience.",
+    technologies: [
+      { name: "Next js", color: "blue" },
+      { name: "SEO", color: "blue" },
+      { name: "Prime React", color: "purple" },
+      { name: "Formik", color: "purple" },
+      { name: "next-auth", color: "purple" },
+      { name: "primeflex", color: "purple" },
+      { name: "yup", color: "purple" },
+    ],
+    category: ["web"],
+    duration : "May 2024 - Jul 2024",
+    images: [
+      { url: "/image/productiviti-web (7).png", alt: "marketing website" },
+      { url: "/image/productiviti-web (4).png", alt: "marketing website" },
+      { url: "/image/productiviti-web (5).png", alt: "marketing website" },
+      { url: "/image/productiviti-web (3).png", alt: "marketing website" },
+      { url: "/image/productiviti-web (6).png", alt: "marketing website" },
+      { url: "/image/productiviti-web (2).png", alt: "marketing website" },
+
+    ]
+  },
 ];
 
 export function Projects() {
   const [activeCategory, setActiveCategory] = useState<string>("All");
 
   const filteredProjects = activeCategory === "All" 
-    ? PROJECTS 
-    : PROJECTS.filter(project => 
-        project.category.toLowerCase() === activeCategory.toLowerCase()
-      );
+  ? PROJECTS 
+  : PROJECTS.filter(project => 
+      project.category.some(cat => 
+        cat.toLowerCase() === activeCategory.toLowerCase()
+      )
+    );
 
   return (
     <section className="py-28 px-8 bg-gradient-to-b from-white to-gray-50">

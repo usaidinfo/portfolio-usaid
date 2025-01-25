@@ -128,7 +128,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
                   <Image
                     src={image.url}
                     alt={image.alt}
-                    className="object-cover"
+                    className="object-contain"
                     fill
                   />
                 </div>

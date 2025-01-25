@@ -57,7 +57,7 @@ const EXPERIENCE_ITEMS = [
     icon: BriefcaseIcon,
     title: "Fronend Developer",
     company: "Leaf AI",
-    period: "15 Dec - Present",
+    period: "Dec 2024 - Present",
     children: [
       "Developed a sensor management platform using Next.js",
       "Utilised Material UI for components like widgets and charts",
