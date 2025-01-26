@@ -173,6 +173,8 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
         {project.demoLink && (
           <Button
             className="flex items-center gap-2"
+            // @ts-ignore
+            onClick={()=> (window.location.href = project.demoLink)}
             placeholder={undefined}
             onPointerEnterCapture={undefined}
             onPointerLeaveCapture={undefined}
@@ -184,6 +186,8 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
           <Button
             variant="outlined"
             className="flex items-center gap-2"
+            // @ts-ignore
+            onClick={()=> (window.location.href = project.githubLink)}
             placeholder={undefined}
             onPointerEnterCapture={undefined}
             onPointerLeaveCapture={undefined}

@@ -78,6 +78,7 @@ export const PROJECTS: Project[] = [
       { url: "/image/careerbridge1.png", alt: "Lanind Page mobile" },
       { url: "/image/careerbridge1 (1).png", alt: "Lanind Page mobile" },
     ],
+    demoLink: "https://careerbridgebyusaid.vercel.app",
   },
   {
     id: "time-monitoring",
