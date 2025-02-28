@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import { Input, Button, Typography } from "@material-tailwind/react";
 import { useState } from "react";
