@@ -140,8 +140,8 @@ function Hero() {
                   "React.js",
                   "Next.js",
                   "TypeScript",
-                  "Tailwind CSS",
-                  "Material UI",
+                  "React Native",
+                  "Flutter",
                 ].map((tech) => (
                   <span
                     key={tech}
