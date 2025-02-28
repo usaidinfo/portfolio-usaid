@@ -33,12 +33,13 @@ const EDUCATION_ITEMS = [
 const EXPERIENCE_ITEMS = [
   {
     icon: CommandLineIcon,
-    title: "Personal Projects",
-    period: "Oct 2024 - Present",
+    title: "Freelance Frontend Developer ",
+    period: "Sep 2023 - Present",
     children: [
-      "Built a Jira-like task management app using MERN stack",
-      "Developed job posting software with advanced cart functionalities",
-      "Created dedicated cart project using Next.js and Redux Toolkit",
+      "Developed a job posting platform with multiple homepages and advanced features using Bootstrapand Redux",
+      "Built an e-commerce platform with cart functionalities and animations for a seamless shopping experience.",
+      "Created an event booking mobile app in React Native for discovering and booking nearby shows and live events.",
+      "A comprehensive real-time Step Counter App using React Native and Expo with using Expo sensors for pedometers and accelerometer and birometer."
     ],
   },
   {
@@ -71,7 +72,7 @@ const SKILLS_ITEMS = [
     icon: CommandLineIcon,
     title: "Technical Skills",
     children:
-      "HTML, CSS, JS, TS, React.js, Next.js, Tailwind, Bootstrap, Material UI, shadcn UI",
+      "HTML, CSS, JS, TS, React.js, Next.js, Tailwind, Bootstrap, Material UI, shadcn UI, Flutter, React Native, Dart, Github, BitBucket, MongoDB, SQL, Express, Rest API, React Query, JQuery, Redux, Zustand",
   },
   {
     icon: SparklesIcon,
@@ -82,7 +83,7 @@ const SKILLS_ITEMS = [
   {
     icon: LanguageIcon,
     title: "Languages",
-    children: "English, Hindi",
+    children: "English, Hindi, German",
   },
 ];
 
