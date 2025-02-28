@@ -79,6 +79,7 @@ export const PROJECTS: Project[] = [
       { url: "/image/careerbridge1 (1).png", alt: "Lanind Page mobile" },
     ],
     demoLink: "https://careerbridgebyusaid.vercel.app",
+    githubLink: "https://github.com/usaidinfo/superio"
   },
   {
     id: "time-monitoring",
@@ -156,6 +157,47 @@ export const PROJECTS: Project[] = [
       { url: "/image/productiviti-web (2).png", alt: "marketing website" },
 
     ]
+  },
+  {
+    id: "happening-app",
+    img: "/image/happening.png",
+    title: "Happening - Events Booking",
+    desc: "Happening is a comprehensive React Native application that allows users to discover, bookmark, and purchase tickets for local and global events.",
+    longDesc: "Happening provides a seamless mobile experience for event enthusiasts to find and book tickets for concerts, conferences, workshops, and social gatherings. The app features an intuitive interface with personalized event recommendations based on user preferences and past activity.\n\nUsers can explore events through multiple discovery pathways including location-based searching, category filtering, and trending events. Each event listing includes detailed information such as venue details, ticket pricing tiers, event schedules, performer/speaker information, and interactive maps.\n\nThe app implements a secure payment gateway for ticket purchases, digital ticket storage with QR code generation, and event reminders with calendar integration. Social features enable users to share events with friends, see which events friends are attending, and coordinate group bookings.\n\nHappening also includes an organizer portal allowing event creators to manage listings, track ticket sales, communicate with attendees, and analyze event performance metrics through comprehensive analytics dashboards.",
+    technologies: [
+      { name: "React Native", color: "blue" },
+      { name: "Expo", color: "purple" },
+      { name: "Redux", color: "purple" },
+      { name: "Firebase", color: "orange" },
+      { name: "Stripe API", color: "green" },
+      { name: "Google Maps API", color: "red" },
+      { name: "Formik", color: "purple" },
+      { name: "Yup", color: "purple" },
+      { name: "React Navigation", color: "blue" },
+      { name: "AsyncStorage", color: "purple" },
+    ],
+    category: ["mobile"],
+    duration : "May 2024 - Jul 2024",
+    images: [
+      { url: "/image/happening.png", alt: "Login page" },
+      { url: "/image/happening1.png", alt: "Event Details" },
+      { url: "/image/happening2.png", alt: "Home screen" },
+      { url: "/image/happening3.png", alt: "Event Details 2" },
+      { url: "/image/happening4.png", alt: "Seats Details" },
+      { url: "/image/happening5.png", alt: "Booking Confirmation" },
+      { url: "/image/happening6.png", alt: "My bookings" },
+      { url: "/image/happening7.png", alt: "Search" },
+      { url: "/image/happening8.png", alt: "My wishlist" },
+      { url: "/image/happening9.png", alt: "Account details" },
+      { url: "/image/happening10.png", alt: "Landing page - light mode" },
+      { url: "/image/happening12.png", alt: "Landing page - dark mode" },
+      { url: "/image/happening13.png", alt: "Recommended for you" },
+      { url: "/image/happening14.png", alt: "My bookings - dark mode" },
+      { url: "/image/happening15.png", alt: "Event Details - dark mode" },
+      { url: "/image/happening16.png", alt: "Booking confirmation - dark mode" },
+    ],
+    demoLink: "https://expo.dev/accounts/musaid1234/projects/plurit-happening-app/builds/a5f14aa4-ad01-4276-8076-c163f259c4ac",
+    githubLink: "https://github.com/usaidinfo/happening-app"
   },
 ];
 
