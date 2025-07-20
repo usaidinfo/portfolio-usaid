@@ -16,7 +16,7 @@ const EDUCATION_ITEMS = [
     icon: AcademicCapIcon,
     title: "Bachelor of Computer Application",
     period: "Aug 2023 - Aug 2026",
-    institution: "Barkatullah University",
+    institution: "Jamia Milia Islamia",
     children:
       "Currently pursuing BCA with focus on computer science fundamentals and practical programming skills.",
   },
@@ -32,21 +32,10 @@ const EDUCATION_ITEMS = [
 
 const EXPERIENCE_ITEMS = [
   {
-    icon: CommandLineIcon,
-    title: "Freelance Frontend Developer ",
-    period: "Sep 2023 - Present",
-    children: [
-      "Developed a job posting platform with multiple homepages and advanced features using Bootstrapand Redux",
-      "Built an e-commerce platform with cart functionalities and animations for a seamless shopping experience.",
-      "Created an event booking mobile app in React Native for discovering and booking nearby shows and live events.",
-      "A comprehensive real-time Step Counter App using React Native and Expo with using Expo sensors for pedometers and accelerometer and birometer."
-    ],
-  },
-  {
     icon: BriefcaseIcon,
     title: "Frontend Developer",
     company: "Infomover Technologies",
-    period: "Feb 2024 - Jan 2025",
+    period: "Jan 2023 - Dec 2024",
     children: [
       "Developed a time monitoring application using Next.js and UI component libraries",
       "Created a mobile app using React Native for the time monitoring application",
@@ -58,11 +47,11 @@ const EXPERIENCE_ITEMS = [
     icon: BriefcaseIcon,
     title: "Fronend Developer",
     company: "Leaf AI",
-    period: "Dec 2024 - Present",
+    period: "Jan 2025 - Present",
     children: [
-      "Developed a sensor management platform using Next.js",
-      "Utilised Material UI for components like widgets and charts",
-      "For styling using Tailwind CSS"
+      "Built an IoT platform for real-time environmental sensor data, AI insights, and device integration.",
+      "Created an invoice system with payment tracking, discounts, and real-time reporting.",
+      "Developed business management app with sales, inventory, and customer management modules."
     ]
   }
 ];

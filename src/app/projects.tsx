@@ -34,7 +34,7 @@ export const PROJECTS: Project[] = [
     img: "/image/leaf-ai-dashboard.png",
     title: "Sensor Management Platform",
     desc: "A comprehensive IoT platform for managing and monitoring environmental sensors with real-time data visualization and AI-powered insights.",
-    longDesc: "Leading the frontend development of a sophisticated sensor management platform that handles real-time data from environmental sensors. The platform features interactive dashboards, real-time monitoring, and AI-powered analytics for environmental data interpretation.",
+longDesc: "Leading the frontend development of a sophisticated IoT sensor management platform that revolutionizes environmental monitoring and data analysis. This comprehensive system integrates cutting-edge technology to provide real-time insights into environmental conditions through an intuitive and responsive user interface. The platform serves as a centralized hub for managing multiple types of environmental sensors, including soil moisture sensors, temperature monitors, humidity detectors, and air quality measurement devices. Users can seamlessly configure sensor networks across different locations, from greenhouses and indoor gardens to hydroponic setups and outdoor agricultural environments. Key features include a dynamic dashboard that displays real-time sensor readings with interactive charts and graphs powered by Recharts, enabling users to visualize environmental trends and patterns over time. The system supports multiple soil types (organic soil, rock wool, coconut substrates) with specialized sensor configurations for each medium, ensuring accurate readings regardless of the growing environment. The mobile-first design ensures accessibility across all devices, featuring QR code scanning for easy sensor setup, intuitive navigation, and optimized performance for field use. The platform implements robust state management using Zustand for seamless data flow and real-time updates. Advanced data visualization capabilities allow users to analyze historical trends, compare multiple sensor readings simultaneously, and identify optimal growing conditions. The system features customizable date ranges, interactive tooltips, and responsive charts that adapt to different screen sizes. Built with enterprise-grade architecture using Next.js and TypeScript, the platform ensures type safety, scalability, and maintainability. Material UI components provide a consistent and professional user experience, while the modular design allows for easy feature expansion and customization. The authentication system includes secure user management, password recovery, and session handling, ensuring data security and user privacy. Multi-location support enables users to manage sensor networks across different facilities, with location-specific plant management and sensor association capabilities. \n \n  Please use :- \n Username : Usaid \n Password : secret123",
     technologies: [
       { name: "Next.js", color: "blue" },
       { name: "TypeScript", color: "blue" },
@@ -55,6 +55,8 @@ export const PROJECTS: Project[] = [
       { url: "/image/leafai-mobile6.png", alt: "Plant selection page" },
       { url: "/image/leafai-mobile7.png", alt: "Setup page" },
     ],
+    demoLink : "https://leaf-ai-frontend-usaidinfos-projects.vercel.app/login",
+    githubLink : "https://github.com/usaidinfo/nextjs-deploy"
   },
   {
     id: "career-bridge",
@@ -156,7 +158,8 @@ export const PROJECTS: Project[] = [
       { url: "/image/productiviti-web (6).png", alt: "marketing website" },
       { url: "/image/productiviti-web (2).png", alt: "marketing website" },
 
-    ]
+    ],
+    demoLink :'https://www.productiviti.io'
   },
   {
     id: "happening-app",
@@ -199,6 +202,55 @@ export const PROJECTS: Project[] = [
     demoLink: "https://expo.dev/accounts/musaid1234/projects/plurit-happening-app/builds/a5f14aa4-ad01-4276-8076-c163f259c4ac",
     githubLink: "https://github.com/usaidinfo/happening-app"
   },
+  {
+  id: "wakanda-books",
+  img: "/image/wakandabooks (11).png",
+  title: "WakandaBooks - Business Management Suite",
+  desc: "A comprehensive mobile business management application featuring sales tracking, inventory management, customer relations, and invoice generation for small to medium enterprises.",
+  longDesc: "WakandaBooks is a powerful and intuitive mobile business management application designed specifically for small to medium enterprises seeking to streamline their operations and boost productivity. Built with React Native, this comprehensive solution provides businesses with all the essential tools needed to manage their daily operations efficiently.\n\nThe application excels in sales management, offering complete sales cycle tracking from initial customer contact to final payment collection. Users can create professional invoices, manage both immediate and credit sales, track payment statuses, and generate detailed sales analytics. The robust customer management system allows businesses to maintain comprehensive customer profiles, manage billing and shipping addresses, set credit limits, and track payment histories.\n\nInventory management is another cornerstone feature, supporting multi-warehouse operations with real-time stock tracking, product categorization, and automated reorder alerts. The system handles complex inventory scenarios including alternative units of measurement, batch tracking, and warehouse transfers.\n\nWhat sets WakandaBooks apart is its user-centric design and offline-first approach. The application works seamlessly even with limited internet connectivity, ensuring business operations never stop. The intuitive interface reduces learning curves, making it accessible for users with varying technical expertise.\n\nThe invoice generation system supports multiple templates and customization options, allowing businesses to maintain their brand identity. Real-time synchronization ensures data consistency across multiple devices and users. Advanced reporting and analytics provide valuable insights into business performance, helping owners make informed decisions.\n\nWith multi-language support, phone-based authentication, and cloud backup, WakandaBooks represents a complete digital transformation solution for traditional businesses looking to modernize their operations while maintaining simplicity and reliability.",
+  technologies: [
+    { name: "React Native CLI", color: "blue" },
+    { name: "React Navigation", color: "blue" },
+    { name: "Formik", color: "purple" },
+    { name: "Yup Validation", color: "purple" },
+    { name: "AsyncStorage", color: "green" },
+    { name: "i18next", color: "green" },
+    { name: "React Native Image Picker", color: "orange" },
+    { name: "Date-fns", color: "orange" },
+    { name: "React Native Safe Area Context", color: "purple" },
+    { name: "React Native Responsive Screen", color: "purple" },
+    { name: "React Native Confirmation Code Field", color: "orange" },
+    { name: "React Native Localize", color: "green" },
+    { name: "Custom Hooks", color: "blue" },
+    { name: "RESTful APIs", color: "green" }
+  ],
+  category: ["mobile"],
+  duration: "Mar 2025 - Jul 2025",
+  images: [
+    { url: "/image/wakandabooks.png", alt: "business management dashboard" },
+    { url: "/image/wakandabooks (15).png", alt: "business management app" },
+    { url: "/image/wakandabooks (3).png", alt: "invoice generation" },
+    { url: "/image/wakandabooks (11).png", alt: "customer management" },
+    { url: "/image/wakandabooks (7).png", alt: "sales tracking" },
+    { url: "/image/wakandabooks (19).png", alt: "product inventory" },
+    { url: "/image/wakandabooks (2).png", alt: "authentication screen" },
+    { url: "/image/wakandabooks (14).png", alt: "dashboard overview" },
+    { url: "/image/wakandabooks (8).png", alt: "payment tracking" },
+    { url: "/image/wakandabooks (21).png", alt: "business setup" },
+    { url: "/image/wakandabooks (5).png", alt: "invoice preview" },
+    { url: "/image/wakandabooks (17).png", alt: "customer details" },
+    { url: "/image/wakandabooks (1).png", alt: "onboarding screen" },
+    { url: "/image/wakandabooks (12).png", alt: "product management" },
+    { url: "/image/wakandabooks (9).png", alt: "sales analytics" },
+    { url: "/image/wakandabooks (4).png", alt: "company profile" },
+    { url: "/image/wakandabooks (18).png", alt: "warehouse management" },
+    { url: "/image/wakandabooks (6).png", alt: "credit sales" },
+    { url: "/image/wakandabooks (13).png", alt: "navigation menu" },
+    { url: "/image/wakandabooks (20).png", alt: "settings screen" },
+    { url: "/image/wakandabooks (10).png", alt: "multi-language support" },
+    { url: "/image/wakandabooks (16).png", alt: "offline functionality" }
+  ]
+}
 ];
 
 export function Projects() {
