@@ -13,16 +13,12 @@ export function ProjectCard({ img, title, desc, technologies }: ProjectCardProps
   return (
     <Card 
       className="w-full h-full shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
-      placeholder={undefined}
-      onPointerEnterCapture={undefined}
-      onPointerLeaveCapture={undefined}
+      {...({} as React.ComponentProps<typeof Card>)}
     >
       <CardHeader
         floated={false}
         className="relative h-48 rounded-t-xl overflow-hidden"
-        placeholder={undefined}
-        onPointerEnterCapture={undefined}
-        onPointerLeaveCapture={undefined}
+        {...({} as React.ComponentProps<typeof CardHeader>)}
       >
         <Image
           src={img}
@@ -33,25 +29,19 @@ export function ProjectCard({ img, title, desc, technologies }: ProjectCardProps
       </CardHeader>
       <CardBody 
         className="p-6"
-        placeholder={undefined}
-        onPointerEnterCapture={undefined}
-        onPointerLeaveCapture={undefined}
+        {...({} as React.ComponentProps<typeof CardBody>)}
       >
         <Typography 
           variant="h5" 
           color="blue-gray" 
           className="mb-3 font-bold"
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+          {...({} as React.ComponentProps<typeof Typography>)}
         >
           {title}
         </Typography>
         <Typography 
           className="mb-4 font-normal text-gray-600"
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+          {...({} as React.ComponentProps<typeof Typography>)}
         >
           {desc}
         </Typography>
@@ -71,9 +61,7 @@ export function ProjectCard({ img, title, desc, technologies }: ProjectCardProps
           variant="text" 
           color="gray" 
           className="flex items-center gap-2 pl-0 hover:pl-2 transition-all"
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+          {...({} as React.ComponentProps<typeof Button>)}
         >
           View Details
           <svg

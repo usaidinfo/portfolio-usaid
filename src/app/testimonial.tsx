@@ -15,18 +15,14 @@ export function Testimonial() {
             variant="h2"
             color="blue-gray"
             className="mb-4"
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+            {...({} as React.ComponentProps<typeof Typography>)}
           >
             What Clients Say
           </Typography>
           <Typography
             variant="lead"
             className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-8/12"
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+            {...({} as React.ComponentProps<typeof Typography>)}
           >
             Discover what clients have to say about their experiences working
             with me. My client&apos;s satisfaction is my greatest achievement!
@@ -36,32 +32,24 @@ export function Testimonial() {
           color="transparent"
           shadow={false}
           className="py-8 lg:flex-row"
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+          {...({} as React.ComponentProps<typeof Card>)}
         >
           <CardBody
             className="w-full lg:gap-10 h-full lg:!flex justify-between "
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+            {...({} as React.ComponentProps<typeof CardBody>)}
           >
             <div className="w-full mb-10 lg:mb-0">
               <Typography
                 variant="h3"
                 color="blue-gray"
                 className="mb-4 font-bold lg:max-w-xs"
-                placeholder={undefined}
-                onPointerEnterCapture={undefined}
-                onPointerLeaveCapture={undefined}
+                {...({} as React.ComponentProps<typeof Typography>)}
               >
                 Mobile App Development
               </Typography>
               <Typography
                 className="mb-3 w-full lg:w-8/12 font-normal !text-gray-500"
-                placeholder={undefined}
-                onPointerEnterCapture={undefined}
-                onPointerLeaveCapture={undefined}
+                {...({} as React.ComponentProps<typeof Typography>)}
               >
                 I had the pleasure of working with Lily on a critical web
                 development project, and I can confidently say that their
@@ -71,18 +59,14 @@ export function Testimonial() {
                 variant="h6"
                 color="blue-gray"
                 className="mb-0.5"
-                placeholder={undefined}
-                onPointerEnterCapture={undefined}
-                onPointerLeaveCapture={undefined}
+                {...({} as React.ComponentProps<typeof Typography>)}
               >
                 Michael - Technical Manager
               </Typography>
               <Typography
                 variant="small"
                 className="font-normal mb-5 !text-gray-500"
-                placeholder={undefined}
-                onPointerEnterCapture={undefined}
-                onPointerLeaveCapture={undefined}
+                {...({} as React.ComponentProps<typeof Typography>)}
               >
                 Marketing @ APPLE INC.
               </Typography>
@@ -96,9 +80,7 @@ export function Testimonial() {
                     active === 1 ? "opacity-100" : "opacity-50"
                   }`}
                   onClick={() => setActive(1)}
-                  placeholder={undefined}
-                  onPointerEnterCapture={undefined}
-                  onPointerLeaveCapture={undefined}
+                  {...({} as React.ComponentProps<typeof Avatar>)}
                 />
                 <div className="w-[1px] h-[36px] bg-blue-gray-100 "></div>
                 <Avatar
@@ -110,9 +92,7 @@ export function Testimonial() {
                     active === 2 ? "opacity-100" : "opacity-50"
                   }`}
                   onClick={() => setActive(2)}
-                  placeholder={undefined}
-                  onPointerEnterCapture={undefined}
-                  onPointerLeaveCapture={undefined}
+                  {...({} as React.ComponentProps<typeof Avatar>)}
                 />
                 <div className="w-[1px] h-[36px] bg-blue-gray-100" />
                 <Avatar
@@ -124,9 +104,7 @@ export function Testimonial() {
                     active === 3 ? "opacity-100" : "opacity-50"
                   }`}
                   onClick={() => setActive(3)}
-                  placeholder={undefined}
-                  onPointerEnterCapture={undefined}
-                  onPointerLeaveCapture={undefined}
+                  {...({} as React.ComponentProps<typeof Avatar>)}
                 />
               </div>
             </div>

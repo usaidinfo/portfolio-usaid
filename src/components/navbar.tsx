@@ -48,9 +48,8 @@ function NavItem({ children, href }: NavItemProps) {
         variant="paragraph"
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"
-        placeholder={undefined}
-        onPointerEnterCapture={undefined}
-        onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Typography>)}
+
       >
         {children}
       </Typography>
@@ -75,9 +74,8 @@ export function Navbar() {
       shadow={false}
       fullWidth
       className="border-0 sticky top-0 z-50"
-      placeholder={undefined}
-      onPointerEnterCapture={undefined}
-      onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof MTNavbar>)}
+
     >
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex">
@@ -91,9 +89,8 @@ export function Navbar() {
           <Typography
           color="blue-gray"
           className="text-lg font-bold text-center -mt-1"
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Typography>)}
+
         >Portfolio
         </Typography>
         </div>

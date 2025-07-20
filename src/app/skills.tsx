@@ -70,9 +70,8 @@ export function Skills() {
         <Typography 
           color="blue-gray" 
           className="mb-4 font-bold uppercase tracking-widest text-sm text-gray-600"
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Typography>)}
+
         >
           Technical Capabilities
         </Typography>
@@ -80,18 +79,16 @@ export function Skills() {
           variant="h1" 
           color="blue-gray" 
           className="mb-6 text-4xl lg:text-5xl font-bold tracking-tight"
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Typography>)}
+
         >
           Expertise in Modern Development
         </Typography>
         <Typography
           variant="lead"
           className="mx-auto w-full !text-gray-600 lg:w-7/12 text-lg leading-relaxed"
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Typography>)}
+
         >
           Combining cutting-edge technologies with user-centric design to build 
           scalable digital solutions that deliver measurable results.

@@ -20,9 +20,7 @@ export function PopularClients() {
           <Typography
             variant="h6"
             className="mb-4 uppercase !text-gray-500"
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Typography>)}
           >
             POPULAR CLIENTS
           </Typography>
@@ -30,9 +28,7 @@ export function PopularClients() {
             variant="h2"
             color="blue-gray"
             className="mb-4"
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Typography>)}
           >
             Trusted by over 10,000+ <br /> clients
           </Typography>

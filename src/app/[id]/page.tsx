@@ -21,9 +21,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
         <Typography 
           variant="h3" 
           className="mb-4"
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Typography>)}
         >
           Project not found
         </Typography>
@@ -31,9 +29,8 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
           <Button 
             variant="text" 
             className="flex items-center gap-2"
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Button>)}
+
           >
             <ArrowLeftIcon className="h-4 w-4" /> Back to Projects
           </Button>
@@ -48,9 +45,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
         <Button
           variant="text"
           className="mb-8 flex items-center gap-2"
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Button>)}
         >
           <ArrowLeftIcon className="h-4 w-4" /> Back to Projects
         </Button>
@@ -60,9 +55,9 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
         <Typography
           variant="h1"
           className="mb-4 text-4xl font-bold"
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+
+              {...({} as React.ComponentProps<typeof Typography>)}
+
         >
           {project.title}
         </Typography>
@@ -79,9 +74,8 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
         <Typography
           variant="lead"
           className="text-gray-600"
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Typography>)}
+
         >
           {project.duration}
         </Typography>
@@ -90,23 +84,20 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
       {project.images && project.images.length > 0 && (
         <Card
           className="mb-12"
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Card>)}
+
         >
           <CardBody
             className="p-0"
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof CardBody>)}
+
           >
             <Carousel
               className="rounded-xl"
               autoplay
               loop
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Carousel>)}
+
               navigation={({ setActiveIndex, activeIndex, length }) => (
                 <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
                   {new Array(length).fill("").map((_, i) => (
@@ -140,29 +131,25 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
 
       <Card
         className="mb-12"
-        placeholder={undefined}
-        onPointerEnterCapture={undefined}
-        onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Card>)}
+
       >
         <CardBody
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof CardBody>)}
+
         >
           <Typography
             variant="h4"
             className="mb-4"
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Typography>)}
+
           >
             Project Overview
           </Typography>
           <Typography
             className="text-gray-600 whitespace-pre-line"
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Typography>)}
+
           >
             {project.longDesc}
           </Typography>
@@ -175,9 +162,8 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
             className="flex items-center gap-2"
             // @ts-ignore
             onClick={()=> (window.location.href = project.demoLink)}
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Button>)}
+
           >
             <GlobeAltIcon className="h-4 w-4" /> Live Demo
           </Button>
@@ -188,9 +174,8 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
             className="flex items-center gap-2"
             // @ts-ignore
             onClick={()=> (window.location.href = project.githubLink)}
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Button>)}
+
           >
             <CodeBracketIcon className="h-4 w-4" /> View Code
           </Button>

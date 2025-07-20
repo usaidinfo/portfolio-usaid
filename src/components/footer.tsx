@@ -10,9 +10,8 @@ export function Footer() {
         <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 border-t border-gray-200 py-6 md:justify-between">
           <Typography
             className="text-center font-normal !text-gray-700"
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Typography>)}
+
           >
             &copy; {CURRENT_YEAR} Made
             by{" "}
@@ -30,9 +29,8 @@ export function Footer() {
                   href="#"
                   variant="small"
                   className="font-normal text-gray-700 hover:text-gray-900 transition-colors"
-                  placeholder={undefined}
-                  onPointerEnterCapture={undefined}
-                  onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Typography>)}
+
                 >
                   {link}
                 </Typography>

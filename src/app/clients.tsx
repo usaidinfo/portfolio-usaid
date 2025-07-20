@@ -20,9 +20,8 @@ export function Clients() {
           variant="h6"
           color="blue-gray"
           className="mb-8"
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Typography>)}
+
         >
           My awesome clients
         </Typography>

@@ -86,17 +86,13 @@ export function Resume() {
             variant="h2"
             color="blue-gray"
             className="mb-3 font-bold"
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+            {...({} as React.ComponentProps<typeof Typography>)}
           >
             My Experience
           </Typography>
           <Typography
             className="font-normal text-gray-500 lg:w-2/3 mx-auto"
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+            {...({} as React.ComponentProps<typeof Typography>)}
           >
             With hands-on experience in modern web technologies and a passion
             for creating exceptional user experiences, I bring ideas to life
@@ -116,9 +112,7 @@ export function Resume() {
                   <Typography
                     variant="h4"
                     color="blue-gray"
-                    placeholder={undefined}
-                    onPointerEnterCapture={undefined}
-                    onPointerLeaveCapture={undefined}
+                    {...({} as React.ComponentProps<typeof Typography>)}
                   >
                     Work Experience
                   </Typography>
@@ -135,18 +129,14 @@ export function Resume() {
                         variant="h6"
                         color="blue-gray"
                         className="mb-1"
-                        placeholder={undefined}
-                        onPointerEnterCapture={undefined}
-                        onPointerLeaveCapture={undefined}
+                        {...({} as React.ComponentProps<typeof Typography>)}
                       >
                         {item.title}
                       </Typography>
                       {item.company && (
                         <Typography
                           className="mb-2 text-blue-gray-800"
-                          placeholder={undefined}
-                          onPointerEnterCapture={undefined}
-                          onPointerLeaveCapture={undefined}
+                          {...({} as React.ComponentProps<typeof Typography>)}
                         >
                           {item.company}
                         </Typography>
@@ -154,9 +144,7 @@ export function Resume() {
                       <Typography
                         variant="small"
                         className="mb-4 text-gray-600 font-semibold"
-                        placeholder={undefined}
-                        onPointerEnterCapture={undefined}
-                        onPointerLeaveCapture={undefined}
+                        {...({} as React.ComponentProps<typeof Typography>)}
                       >
                         {item.period}
                       </Typography>
@@ -167,9 +155,7 @@ export function Resume() {
                               <span className="text-blue-500 font-bold">•</span>
                               <Typography
                                 className="text-gray-700"
-                                placeholder={undefined}
-                                onPointerEnterCapture={undefined}
-                                onPointerLeaveCapture={undefined}
+                                {...({} as React.ComponentProps<typeof Typography>)}
                               >
                                 {point}
                               </Typography>
@@ -178,9 +164,7 @@ export function Resume() {
                         ) : (
                           <Typography
                             className="text-gray-700"
-                            placeholder={undefined}
-                            onPointerEnterCapture={undefined}
-                            onPointerLeaveCapture={undefined}
+                            {...({} as React.ComponentProps<typeof Typography>)}
                           >
                             {item.children}
                           </Typography>
@@ -202,9 +186,7 @@ export function Resume() {
                 <Typography
                   variant="h4"
                   color="blue-gray"
-                  placeholder={undefined}
-                  onPointerEnterCapture={undefined}
-                  onPointerLeaveCapture={undefined}
+                  {...({} as React.ComponentProps<typeof Typography>)}
                 >
                   Education
                 </Typography>
@@ -217,34 +199,26 @@ export function Resume() {
                       variant="h6"
                       color="blue-gray"
                       className="mb-1"
-                      placeholder={undefined}
-                      onPointerEnterCapture={undefined}
-                      onPointerLeaveCapture={undefined}
+                      {...({} as React.ComponentProps<typeof Typography>)}
                     >
                       {item.title}
                     </Typography>
                     <Typography
                       className="text-gray-700 mb-1"
-                      placeholder={undefined}
-                      onPointerEnterCapture={undefined}
-                      onPointerLeaveCapture={undefined}
+                      {...({} as React.ComponentProps<typeof Typography>)}
                     >
                       {item.institution}
                     </Typography>
                     <Typography
                       variant="small"
                       className="text-gray-600 mb-2"
-                      placeholder={undefined}
-                      onPointerEnterCapture={undefined}
-                      onPointerLeaveCapture={undefined}
+                      {...({} as React.ComponentProps<typeof Typography>)}
                     >
                       {item.period}
                     </Typography>
                     <Typography
                       className="text-gray-600 text-sm"
-                      placeholder={undefined}
-                      onPointerEnterCapture={undefined}
-                      onPointerLeaveCapture={undefined}
+                      {...({} as React.ComponentProps<typeof Typography>)}
                     >
                       {item.children}
                     </Typography>
@@ -261,9 +235,7 @@ export function Resume() {
                     variant="h5"
                     color="blue-gray"
                     className="mb-4 flex items-center gap-2"
-                    placeholder={undefined}
-                    onPointerEnterCapture={undefined}
-                    onPointerLeaveCapture={undefined}
+                    {...({} as React.ComponentProps<typeof Typography>)}
                   >
                     <item.icon className="h-5 w-5 text-blue-500" />
                     {item.title}
@@ -289,9 +261,7 @@ export function Resume() {
               className="flex items-center gap-3 mt-8"
               onClick={() => window.open("/Usaid CV.pdf", "_blank")}
               fullWidth
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Button>)}
             >
               Download CV
               <ArrowDownTrayIcon className="h-5 w-5" />

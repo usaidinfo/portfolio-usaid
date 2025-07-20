@@ -271,18 +271,16 @@ export function Projects() {
           variant="h2" 
           color="blue-gray" 
           className="mb-4 text-4xl font-bold tracking-tight"
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Typography>)}
+
         >
           Featured Projects
         </Typography>
         <Typography
           variant="lead"
           className="mx-auto w-full px-4 font-normal !text-gray-600 lg:w-6/12 text-lg"
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Typography>)}
+
         >
           Showcasing my journey through various technologies and solutions. 
           Each project represents a unique challenge and innovative solution.

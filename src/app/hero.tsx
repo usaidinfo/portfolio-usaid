@@ -46,9 +46,7 @@ function Hero() {
             variant="h1"
             color="blue-gray"
             className="mb-6 lg:text-5xl !leading-tight text-3xl font-bold"
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+            {...({} as React.ComponentProps<typeof Typography>)}
           >
             Transforming Ideas into{" "}
             <span className="text-black">Digital Reality</span>
@@ -56,9 +54,7 @@ function Hero() {
           <Typography
             variant="lead"
             className="mb-6 !text-gray-600 md:pr-16 xl:pr-28 text-lg"
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+            {...({} as React.ComponentProps<typeof Typography>)}
           >
             I&apos;m Usaid Mustafa, a passionate Frontend Developer specializing
             in React, Next.js, and modern web technologies. With expertise in
@@ -69,9 +65,7 @@ function Hero() {
             <Typography
               variant="small"
               className="mb-3 text-gray-900 font-semibold uppercase tracking-wide"
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Typography>)}
             >
               Let&apos;s connect
             </Typography>
@@ -85,20 +79,15 @@ function Hero() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  crossOrigin={undefined}
                   className="flex-grow"
-                  placeholder={undefined}
-                  onPointerEnterCapture={undefined}
-                  onPointerLeaveCapture={undefined}
+                  {...({} as React.ComponentProps<typeof Input>)}
                 />
                 <Button
                   type="submit"
                   color="gray"
                   className="w-full px-4 md:w-[12rem]"
                   disabled={loading}
-                  placeholder={undefined}
-                  onPointerEnterCapture={undefined}
-                  onPointerLeaveCapture={undefined}
+                  {...({} as React.ComponentProps<typeof Button>)}
                 >
                   {loading ? "Subscribing..." : "Get Updates"}
                 </Button>
@@ -106,9 +95,7 @@ function Hero() {
               {status === "success" && (
                 <Typography
                   className="mt-2 text-sm text-green-500"
-                  placeholder={undefined}
-                  onPointerEnterCapture={undefined}
-                  onPointerLeaveCapture={undefined}
+                  {...({} as React.ComponentProps<typeof Typography>)}
                 >
                   Thanks for subscribing! You&apos;ll receive updates soon.
                 </Typography>
@@ -116,9 +103,7 @@ function Hero() {
               {status === "error" && (
                 <Typography
                   className="mt-2 text-sm text-red-500"
-                  placeholder={undefined}
-                  onPointerEnterCapture={undefined}
-                  onPointerLeaveCapture={undefined}
+                  {...({} as React.ComponentProps<typeof Typography>)}
                 >
                   Failed to subscribe. Please try again.
                 </Typography>
@@ -129,9 +114,7 @@ function Hero() {
             <Typography
               variant="small"
               className="font-normal !text-gray-500"
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
+              {...({} as React.ComponentProps<typeof Typography>)}
             >
               Technologies I work with:{" "}
               <span className="font-medium text-gray-700 space-x-3">
