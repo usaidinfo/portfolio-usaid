@@ -40,7 +40,7 @@ export function ProjectCard({ img, title, desc, technologies }: ProjectCardProps
           {title}
         </Typography>
         <Typography 
-          className="mb-4 font-normal text-gray-600"
+          className="mb-4 font-normal text-gray-600 "
           {...({} as React.ComponentProps<typeof Typography>)}
         >
           {desc}

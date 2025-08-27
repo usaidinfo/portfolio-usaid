@@ -205,8 +205,8 @@ longDesc: "Leading the frontend development of a sophisticated IoT sensor manage
   {
   id: "wakanda-books",
   img: "/image/wakandabooks (11).png",
-  title: "WakandaBooks - Business Management Suite",
-  desc: "A comprehensive mobile business management application featuring sales tracking, inventory management, customer relations, and invoice generation for small to medium enterprises.",
+  title: "Business Management Suite",
+  desc: "Business management app enabling sales tracking, inventory, customer relations, and invoice management.",
   longDesc: "WakandaBooks is a powerful and intuitive mobile business management application designed specifically for small to medium enterprises seeking to streamline their operations and boost productivity. Built with React Native, this comprehensive solution provides businesses with all the essential tools needed to manage their daily operations efficiently.\n\nThe application excels in sales management, offering complete sales cycle tracking from initial customer contact to final payment collection. Users can create professional invoices, manage both immediate and credit sales, track payment statuses, and generate detailed sales analytics. The robust customer management system allows businesses to maintain comprehensive customer profiles, manage billing and shipping addresses, set credit limits, and track payment histories.\n\nInventory management is another cornerstone feature, supporting multi-warehouse operations with real-time stock tracking, product categorization, and automated reorder alerts. The system handles complex inventory scenarios including alternative units of measurement, batch tracking, and warehouse transfers.\n\nWhat sets WakandaBooks apart is its user-centric design and offline-first approach. The application works seamlessly even with limited internet connectivity, ensuring business operations never stop. The intuitive interface reduces learning curves, making it accessible for users with varying technical expertise.\n\nThe invoice generation system supports multiple templates and customization options, allowing businesses to maintain their brand identity. Real-time synchronization ensures data consistency across multiple devices and users. Advanced reporting and analytics provide valuable insights into business performance, helping owners make informed decisions.\n\nWith multi-language support, phone-based authentication, and cloud backup, WakandaBooks represents a complete digital transformation solution for traditional businesses looking to modernize their operations while maintaining simplicity and reliability.",
   technologies: [
     { name: "React Native CLI", color: "blue" },
@@ -249,7 +249,40 @@ longDesc: "Leading the frontend development of a sophisticated IoT sensor manage
     { url: "/image/wakandabooks (20).png", alt: "settings screen" },
     { url: "/image/wakandabooks (10).png", alt: "multi-language support" },
     { url: "/image/wakandabooks (16).png", alt: "offline functionality" }
-  ]
+  ],
+  demoLink : "https://drive.google.com/file/d/12qmVXrkR_w4npthkbuaLmtc84JA3VZq_/view?usp=sharing"
+},
+{
+  id: "hiretalentt",
+  img: "/image/hiretalentt (5).png",  
+  title: "HireTalentt - Freelance Marketplace",
+  desc: "A modern freelancing platform connecting businesses with skilled professionals, enabling seamless hiring and project collaboration.",
+  longDesc: "HireTalentt is a comprehensive freelancing platform designed to connect businesses, startups, and entrepreneurs with top-tier freelance professionals from across the globe. Built with Next.js and a scalable architecture, the platform emphasizes speed, user experience, and reliability while maintaining a modern and intuitive design.\n\nThe platform provides a dual experience—businesses can post projects, browse through a diverse pool of talent, and seamlessly manage their hiring process, while freelancers can create professional profiles, showcase their skills, and apply for projects that match their expertise. With advanced search and filtering, businesses can quickly find the right talent based on skillset, experience, and budget.\n\nHireTalentt prioritizes trust and transparency. Verified profiles, detailed freelancer portfolios, and client reviews ensure that both sides have confidence in their collaborations. The platform supports secure communication, milestone-based payments, and efficient project tracking, reducing the friction commonly experienced in freelance hiring.\n\nOne of the standout features is its streamlined onboarding and Google Sign-In integration, allowing users to quickly set up accounts and start engaging without unnecessary friction. State management with Zustand ensures smooth user flows, while Formik and Yup provide robust validation and form handling for critical sections such as project postings, applications, and account management.\n\nFrom a business perspective, HireTalentt empowers companies to scale quickly by providing access to a global talent pool, while freelancers benefit from fair opportunities, project diversity, and visibility. Tailwind and PrimeReact power the responsive design, ensuring the platform works seamlessly across devices—whether on desktop or mobile.\n\nIn essence, HireTalentt is not just another freelancing platform—it’s a modern, reliable, and scalable solution built for the future of work. By combining technology, usability, and trust, it creates an ecosystem where businesses can grow and freelancers can thrive.",
+  technologies: [
+    { name: "Next.js", color: "blue" },
+    { name: "React", color: "blue" },
+    { name: "Tailwind CSS", color: "green" },
+    { name: "PrimeReact", color: "orange" },
+    { name: "Zustand", color: "purple" },
+    { name: "RESTful APIs", color: "green" },
+    { name: "Google Sign-In", color: "blue" },
+    { name: "TypeScript", color: "blue" },
+    { name: "Formik", color: "purple" },
+    { name: "Yup Validation", color: "purple" }
+  ],
+  category: ["web"],
+  duration: "Aug 2023 - Feb 2024",
+  images: [
+    { url: "/image/hiretalentt (1).png", alt: "talent marketplace" },
+    { url: "/image/hiretalentt (6).png", alt: "project posting interface" },
+    { url: "/image/hiretalentt (5).png", alt: "freelancer profile" },
+    { url: "/image/hiretalentt (2).png", alt: "client dashboard" },
+    { url: "/image/hiretalentt (3).png", alt: "homepage" },
+    { url: "/image/hiretalentt (8).png", alt: "project listing" },
+    { url: "/image/hiretalentt (4).png", alt: "login and authentication" },
+    { url: "/image/hiretalentt (7).png", alt: "search and filter" }
+  ],
+  demoLink :"https://www.hiretalentt.com/"
 }
 ];
 
