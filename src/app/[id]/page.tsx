@@ -93,7 +93,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
 
           >
             <Carousel
-              className="rounded-xl"
+              className="rounded-xl bg-gray-200"
               autoplay
               loop
               {...({} as React.ComponentProps<typeof Carousel>)}
