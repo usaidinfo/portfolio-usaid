@@ -209,6 +209,7 @@ export const PROJECTS: Project[] = [
       { url: "/image/ecency (10).png", alt: "Search and discovery" },
       { url: "/image/ecency (14).png", alt: "Search and discovery" },
     ],
+    demoLink: "https://play.google.com/store/apps/details?id=app.esteem.mobile.android&pcampaignid=web_share",
     githubLink: "https://github.com/Musaid1234/ecency-mobile"
   },
   {
