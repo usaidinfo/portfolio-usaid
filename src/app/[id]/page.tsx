@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -14,6 +14,15 @@ import { PROJECTS } from "../projects";
 
 export default function ProjectDetail({ params }: { params: { id: string } }) {
   const project = PROJECTS.find(p => p.id === params.id);
+  const [showFullDesc, setShowFullDesc] = useState(false);
+  
+  const MAX_DESC_LENGTH = 500;
+  const shouldTruncate = project?.longDesc && project.longDesc.length > MAX_DESC_LENGTH;
+  const displayDesc = project?.longDesc 
+    ? (shouldTruncate && !showFullDesc 
+        ? project.longDesc.substring(0, MAX_DESC_LENGTH) + "..."
+        : project.longDesc)
+    : "";
 
   if (!project) {
     return (
@@ -151,8 +160,18 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
               {...({} as React.ComponentProps<typeof Typography>)}
 
           >
-            {project.longDesc}
+            {displayDesc}
           </Typography>
+          {shouldTruncate && (
+            <Button
+              variant="text"
+              className="mt-4 p-0 text-sm font-medium text-gray-700 hover:text-gray-900"
+              onClick={() => setShowFullDesc(!showFullDesc)}
+              {...({} as React.ComponentProps<typeof Button>)}
+            >
+              {showFullDesc ? "Show Less" : "Show More"}
+            </Button>
+          )}
         </CardBody>
       </Card>
 
